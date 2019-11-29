@@ -1,0 +1,105 @@
+/* starting with css  */
+
+body {
+    /* property:value pair */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222640;
+}
+
+img {
+    border:10px blueviolet dotted;
+}
+
+h1 {
+    border : 2px black solid;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* 
+    relative ems
+    1 em = 16px (dependent on browser)
+    em = width of lowercase letter 'm'
+    3 rem = 3*16 = 48 ems;
+    */
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+cite {
+    font-size: 2rem;
+}
+
+.fieldset-blockquote{
+    background-color: white;
+    color: black;
+    background-image: url("http://placekitten.com/200/300");
+    background-attachment: fixed;
+    background-size: 50%;
+}
+
+/* unvisited links inside unordered list, do the following  */
+ul a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    border: 2px black solid;
+    padding:1rem;
+    /* it is for the non-visited link */
+}
+
+a:visited {
+    /* used for visited links */
+    color: green;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: black;
+}
+
+h1.about-me:hover {
+    color: white;
+}
+
+
+ul a{
+    font-size: 1.2rem;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 1rem;
+    float: right;
+}
+
+
+.floatleft {
+    float:left;
+    border: 5px solid red;
+    /* margin-right: 1rem;
+    margin-bottom: 1rem; */
+    /* TRBL clockwise */
+    margin: 0 1rem 1rem 0;
+}
+
+article {
+    
+    /* text-align: center; */
+    width: 40rem;
+    /* top-bottom left-right */
+    margin : 0 auto;
+
+}
+/* to clear floats */
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

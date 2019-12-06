@@ -75,6 +75,10 @@ a:visited {
     color: red;
 }
 
+
+.font-bold {
+    font-weight: bolder;
+}
 @media (max-width:480px) {
     #title {
         font-size: 2rem;
